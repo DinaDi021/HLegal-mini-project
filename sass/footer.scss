@@ -1,0 +1,157 @@
+@import "variables";
+
+//Футер
+
+.footer__wrapper {
+  background-color: var(--grey-bg);
+}
+
+.footer {
+  max-width: 1600px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  &__address {
+    ul {
+      position: relative;
+      display: flex;
+      align-items: center;
+      margin-bottom: 21px;
+    }
+
+    li {
+      margin-right: 7px;
+    }
+
+    img, span {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+
+  &__map {
+    font-weight: 400;
+    @extend %size-l;
+    color: var(--main-regular);
+  }
+
+  &__link {
+    color: var(--active-regular);
+    @extend %size-s;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 6px;
+      width: 6px;
+      height: 6px;
+      background-color: var(--grey-text);
+      border-radius: 50%;
+    }
+
+    &:hover{
+      color: var(--accent);
+    }
+
+    span {
+      margin-left: 14px;
+    }
+  }
+
+  &__socials {
+
+    ul {
+      display: flex;
+      align-items: center;
+      position: relative;
+    }
+
+    li {
+      margin-right: 7px;
+    }
+
+    img, span {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+
+  &__phone {
+    text-align: right;
+    color: var(--main-alt);
+    @extend %size-l;
+    white-space: nowrap;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 18px;
+      width: 6px;
+      height: 6px;
+      background-color: var(--grey-text);
+      border-radius: 50%;
+    }
+
+    span {
+      margin-left: 14px;
+    }
+  }
+
+  &__email {
+    color: var(--active-regular);
+    @extend %size-l;
+    transition-duration: 0.5s;
+
+    &:hover{
+      color: var(--accent);
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 18px;
+      width: 6px;
+      height: 6px;
+      background-color: var(--grey-text);
+      border-radius: 50%;
+    }
+
+    span {
+      margin-left: 14px;
+    }
+  }
+
+  &__icon {
+    path {
+      transition-duration: 0.5s;
+      fill: var(--active-regular);
+
+      &:hover {
+        fill: var(--accent);
+      }
+    }
+  }
+
+  &__copyright {
+
+    p {
+      font-weight: 400;
+      color: var(--grey-text);
+      @extend %size-l;
+      white-space: nowrap;
+    }
+  }
+}
+
+
+

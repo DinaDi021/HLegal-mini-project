@@ -1,0 +1,763 @@
+@media screen and (max-width: 1725px) {
+  .companies {
+    &__hillel, &__infa-tek, &__look, &__ultimate-card {
+      border-radius: 0;
+    }
+
+    &__column {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 2000px) {
+  .header__logo {
+    &:hover {
+      transition: 1s ease;
+      transform: translate3d(25%, 5%, 150px) scale(1.5);
+    }
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .page {
+    &__container {
+      max-width: 1320px;
+    }
+
+    &__box {
+      max-width: 1080px;
+    }
+
+  }
+
+  .preview {
+    &__picture-desctop {
+      display: none;
+    }
+
+    &__picture-mobile {
+      display: block;
+    }
+
+    &__article {
+      max-width: 66.7%;;
+    }
+  }
+
+  .profile {
+    &__content {
+      max-width: 620px;
+    }
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .page__container {
+    max-width: 904px;
+  }
+
+  .profile {
+    &__content {
+      max-width: 544px;
+    }
+
+    &__avatar {
+      img {
+        width: 300px;
+        height: 375px;
+      }
+    }
+
+    &__header {
+      ul {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      li:not(:last-child) {
+        margin-bottom: 10px;
+      }
+
+      li:not(:first-child) {
+
+        &::before {
+          background-color: transparent;
+        }
+      }
+    }
+
+    &__link {
+      p {
+        padding: 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  .experience {
+    &__text {
+      max-width: 44%;
+    }
+  }
+
+  .preview {
+    &__picture-desctop {
+      display: none;
+    }
+
+    &__picture-mobile {
+      display: block;
+    }
+
+    &__article {
+      max-width: 58%;
+    }
+  }
+
+  .intro {
+    &__content {
+      max-width: calc(57% - 30px);
+    }
+
+    &__list {
+      max-width: calc(43% - 30px);
+    }
+  }
+
+  .more {
+    &__text {
+      max-width: calc(61% - 60px);
+    }
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .page__container {
+    max-width: 790px;
+  }
+
+  .header {
+    &__logo-white {
+      position: relative;
+      margin-bottom: 29.85px;
+    }
+
+    &__socials-white {
+      justify-content: flex-start;
+      margin-bottom: 30px;
+      padding: 0;
+    }
+
+    &__site-white {
+      justify-content: flex-start;
+      padding: 0;
+    }
+
+    &__navigation-white {
+      li:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+
+  .companies {
+    &__column {
+      grid-template-areas: 'hillel wanna-biz tapgerine'
+                            'look orangear adtelligent'
+                            'clickky eco-leasing infa-tek'
+                           'city-park art-print ultimate-card';
+    }
+  }
+
+  .form {
+    &__wrapper {
+      flex-basis: 100%;
+      margin-bottom: 60px;
+      padding: 0;
+    }
+
+    &__popup {
+      flex-basis: 100%;
+    }
+  }
+
+  .team {
+    &__item {
+      max-width: calc(50% - 60px);
+    }
+  }
+
+  .profile {
+    &__desctop {
+      display: none;
+    }
+
+    &__mobile {
+      display: block;
+    }
+
+    &__avatar {
+      display: flex;
+      align-items: center;
+      margin: 0 auto;
+      margin-bottom: 30px;
+    }
+
+    img {
+      margin-right: 30px;
+    }
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .page {
+    &__container {
+      max-width: 648px;
+    }
+
+    &__symbol {
+      background-size: cover;
+    }
+  }
+
+  .header {
+    &__logo {
+      position: relative;
+      margin-bottom: 29.85px;
+    }
+
+    &__socials {
+      justify-content: flex-start;
+      margin-bottom: 30px;
+      padding: 0;
+    }
+
+    &__contacts {
+      &-text {
+        color: var(--grey-text);
+      }
+    }
+
+    &__site {
+      justify-content: flex-start;
+      padding: 0;
+    }
+
+    &__navigation {
+      li:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+
+  .slogan {
+    margin-top: 27%;
+
+    &__title {
+      padding-bottom: 64%;
+    }
+  }
+
+  .experience {
+    &__content {
+      flex-direction: column;
+    }
+
+    &__menu {
+      margin: 0 auto;
+      overflow-x: scroll;
+
+      ul {
+        display: flex;
+      }
+
+      a {
+        margin-right: 30px;
+      }
+    }
+
+    &__list {
+      max-width: 648px;
+    }
+
+    &__text {
+      max-width: 100%;
+      margin: 0 auto;
+      padding-top: 60px;
+    }
+
+    &__item {
+      margin-bottom: 60px;
+
+      a {
+        white-space: nowrap;
+      }
+    }
+  }
+
+  ::-webkit-scrollbar {
+    width: 100%;
+    height: 4px;
+    background: rgba(255, 255, 255, 0.3);
+  }
+
+  .features {
+    &__item {
+      max-width: calc(50% - 60px);
+    }
+  }
+
+  .slick-initialized .slick-slide {
+    flex-wrap: wrap;
+  }
+
+  .preview {
+    &__picture {
+      width: 648px;
+      min-height: 500px;
+
+      img {
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+        border-bottom-left-radius: 0;
+      }
+    }
+
+    &__article {
+      max-width: 100%;
+      border-top-right-radius: 0;
+      border-bottom-left-radius: 12px;
+    }
+  }
+
+  .publications {
+    &__item {
+      max-width: calc(50% - 30px);
+
+      &-tablet {
+        max-width: 100%;
+
+        img {
+          width: 648px;
+        }
+      }
+    }
+  }
+
+  .intro{
+    &__content{
+      max-width: 100%;
+      margin-bottom: 30px;
+    }
+
+    &__list{
+      max-width: 100%;
+    }
+  }
+
+  .more{
+    flex-wrap: wrap;
+
+    &__text {
+      max-width: 100%;
+      margin-bottom: 30px;
+    }
+
+    &__title{
+      max-width: 100%;
+    }
+  }
+
+  .achievements{
+    &__item{
+      height: 90px;
+    }
+  }
+
+  .footer {
+    justify-content: center;
+
+    &__contacts {
+      margin-bottom: 21px;
+    }
+
+    &__copyright {
+      margin-right: 7px;
+    }
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .page {
+    &__container {
+      max-width: 84%;
+    }
+
+    &__mobile {
+      max-width: 620px;
+    }
+  }
+
+  .header {
+    padding: 0;
+
+    &__menu {
+      background: rgba(245, 245, 250, 0.2);
+      padding: 10px 15px;
+
+      &-white {
+        background: var(--grey-bg);
+      }
+    }
+
+    &__logo {
+      display: none;
+    }
+
+    &__socials {
+      justify-content: space-between;
+      margin-bottom: 0;
+    }
+
+    &__contacts {
+      &-text, svg {
+        display: none;
+      }
+
+      a {
+        margin: 0;
+      }
+
+      li {
+        margin: 0;
+
+        &::before {
+          content: '';
+          background-color: transparent;
+        }
+      }
+    }
+
+    &__navigation {
+      display: none;
+    }
+
+    &__mobile {
+      display: flex;
+      justify-content: space-between;
+      padding: 15px 15px 10px 15px;
+      margin-bottom: 20px;
+
+      &-menu {
+        display: flex;
+      }
+
+      &-logo {
+        width: 69.33px;
+        height: 32px;
+      }
+
+      &-slash {
+        display: block;
+        max-height: 26px;
+      }
+
+      &-pages {
+        display: block;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        color: var(--basic-white);
+      }
+
+      &-pages-white {
+        color: var(--main-regular);
+      }
+
+      &-btn {
+        width: 32px;
+        height: 32px;
+        display: block;
+        padding: 0;
+        background-color: transparent;
+        border: none;
+
+        svg path {
+          stroke: var(--basic-white);
+        }
+      }
+
+      &-btn-white {
+        svg path {
+          stroke: var(--main-regular);
+        }
+      }
+    }
+  }
+
+  .slogan {
+    margin-top: 34.5%;
+    margin-bottom: 30px;
+
+    &__title {
+      max-width: 80%;
+      padding-bottom: 51%;
+    }
+  }
+
+  .experience {
+    &__content {
+      margin-bottom: 30px;
+    }
+
+    &__list {
+      max-width: 84%;
+    }
+
+    &__text {
+      max-width: 100%;
+      margin: 0 auto;
+      padding-top: 30px;
+
+      h2 {
+        font-size: 20px;
+        line-height: 24px;
+      }
+    }
+
+    &__item {
+      margin-bottom: 30px;
+
+      a {
+        font-size: 30px;
+        line-height: 37px;
+      }
+    }
+  }
+
+  .features {
+    &__header {
+      margin-bottom: 30px;
+    }
+
+    &__column {
+      padding-bottom: 60px;
+
+      &-pages {
+        padding-bottom: 30px;
+      }
+    }
+
+    &__caption-pages {
+      text-align: center;
+      font-size: 30px;
+      line-height: 37px;
+    }
+
+    &__item {
+      max-width: 100%;
+      margin-bottom: 30px;
+    }
+
+    &__list {
+      ul {
+        grid-template-columns: 100%;
+      }
+    }
+  }
+
+  .companies {
+    &__column {
+      grid-template-areas: 'hillel wanna-biz'
+                            'tapgerine look'
+                            'orangear adtelligent'
+                            'clickky eco-leasing '
+                            'infa-tek city-park'
+                            'art-print ultimate-card';
+    }
+  }
+
+  .publications {
+    &__title {
+      font-size: 30px;
+      line-height: 37px;
+    }
+
+    &__item {
+      max-width: 100%;
+    }
+  }
+
+  .posters {
+    &__icon {
+      img {
+        height: 300px;
+      }
+    }
+
+    &__caption {
+      margin-bottom: 0;
+      font-size: 20px;
+      line-height: 24px;
+    }
+
+    &__title {
+      font-size: 30px;
+      line-height: 37px;
+    }
+
+    &__subtitle {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: center;
+
+    &__address {
+      ul {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+      }
+
+      span {
+        margin-bottom: 10px;
+      }
+    }
+
+    &__link, &__phone, &__email {
+      &::before {
+        content: '';
+        background-color: transparent;
+      }
+
+      span {
+        margin: 0;
+      }
+    }
+
+    &__socials {
+      ul {
+        flex-direction: column;
+      }
+
+      li:not(:last-child) {
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  .team {
+    &__item {
+      max-width: 100%;
+      margin-bottom: 30px;
+    }
+
+    &__title {
+      font-size: 30px;
+      line-height: 37px;
+      margin-bottom: 30px;
+    }
+
+    &__avatar {
+      height: 300px;
+    }
+  }
+
+  .profile {
+    &__avatar {
+      flex-direction: column;
+
+      div{
+        margin-bottom: 0;
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width: 400px) {
+  .page {
+    &__container {
+      max-width: 315px;
+    }
+
+    &__mobile {
+      max-width: 400px;
+    }
+  }
+
+  .slogan {
+    &__title {
+      max-width: 315px;
+    }
+  }
+
+  .preview {
+    &__picture {
+      width: 315px;
+
+      &-desctop {
+        display: none;
+      }
+
+      &-mobile {
+        display: block;
+      }
+
+      img {
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+        border-bottom-left-radius: 0;
+      }
+    }
+
+    &__text {
+      font-size: 30px;
+      line-height: 37px;
+    }
+  }
+
+  .companies {
+    max-width: 400px;
+
+    &__column {
+      grid-template-areas: none;
+
+      div {
+        height: 0;
+
+        &:nth-child(-n+6) {
+          height: 120px;
+        }
+      }
+    }
+
+    &__clickky, &__eco-leasing, &__infa-tek, &__city-park, &__art-print, &__ultimate-card {
+      div {
+        height: 0;
+      }
+
+      a {
+        display: none;
+      }
+    }
+  }
+
+  .form {
+    &__wrapper {
+      margin-bottom: 30px;
+    }
+
+    &__title {
+      font-size: 30px;
+      line-height: 37px;
+    }
+
+  }
+}
